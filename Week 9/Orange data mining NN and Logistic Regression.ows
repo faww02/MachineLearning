@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Paint Data" qualified_name="Orange.widgets.data.owpaintdata.OWPaintData" project_name="Orange3" version="" title="Paint Data" position="(74.0, 250.0)" />
+		<node id="1" name="Logistic Regression" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistic Regression" position="(219.0, 127.0)" />
+		<node id="2" name="Neural Network" qualified_name="Orange.widgets.model.owneuralnetwork.OWNNLearner" project_name="Orange3" version="" title="Neural Network" position="(242.0, 339.0)" />
+		<node id="3" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(387.0, 244.0)" />
+		<node id="4" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(641.0, 246.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Predictions" sink_channel="Data" enabled="true" source_channel_id="predictions" sink_channel_id="data" />
+		<link id="4" source_node_id="1" sink_node_id="3" source_channel="Model" sink_channel="Predictors" enabled="true" source_channel_id="model" sink_channel_id="predictors" />
+		<link id="5" source_node_id="2" sink_node_id="3" source_channel="Model" sink_channel="Predictors" enabled="true" source_channel_id="model" sink_channel_id="predictors" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'attr1': 'x1', 'attr2': 'x2', 'autocommit': True, 'brushRadius': 75, 'controlAreaVisible': True, 'data': [[0.10466940429573399, 0.3381287369516593, 0.0], [0.09943039245931815, 0.30018197612601055, 0.0], [0.051106357773479515, 0.3637854059178384, 0.0], [0.2849726433543113, 0.538258611254091, 0.0], [0.3508041983614257, 0.6513431429293243, 0.0], [0.4843700799606864, 0.7057324778387523, 0.0], [0.5105513089245316, 0.7832182588769587, 0.0], [0.6178862942633847, 0.7635682958173483, 0.0], [0.5921756649153322, 0.8597045529170431, 0.0], [0.6190299185536948, 0.8506961181233939, 0.0], [0.6971401773860819, 0.9462457538438376, 0.0], [0.714825760260829, 0.9338553903944259, 0.0], [0.16106165699713365, 0.35795417628964427, 0.0], [0.1166100384893624, 0.41177388596836234, 0.0], [0.4715801183966709, 0.6255003096672808, 0.0], [0.8108439517407502, 0.9220818345921735, 0.0], [0.9341771178161282, 0.8973295072575221, 0.0], [0.9679563473786432, 0.8700025077255651, 0.0], [0.5950275864120097, 0.1468132232387917, 0.0], [0.6198859557845796, 0.16692559940189264, 0.0], [0.6251017843181689, 0.2661162852602043, 0.0], [0.7667045243065319, 0.4267573056256301, 0.0], [0.8979564214283846, 0.5882743546248397, 0.0], [0.9751934492866304, 0.6288790489538635, 0.0], [0.9460013775587234, 0.7264560923380254, 0.0], [0.10704525666438192, 0.0941637888505179, 0.0], [0.17889176948274518, 0.08678429606512778, 1.0], [0.21975222711670805, 0.1481974094265003, 1.0], [0.23262101579014122, 0.2800414345719011, 1.0], [0.3534077944137433, 0.3974036826387854, 1.0], [0.48290331767383793, 0.5791859425463329, 1.0], [0.6477764797920692, 0.5622248712742537, 1.0], [0.6986189089502371, 0.679547980872054, 1.0], [0.7239317321887041, 0.6177718009399413, 1.0], [0.7490636028651186, 0.6548912070674759, 1.0], [0.6690546599632842, 0.6799860998031827, 1.0], [0.7693163320186911, 0.7701492609130745, 1.0], [0.423455660145984, 0.2704123541656116, 1.0], [0.46332450741301795, 0.23300867597451266, 1.0], [0.5184900089476585, 0.31631867940170294, 1.0], [0.6445778846424026, 0.4995471414823528, 1.0], [0.7862027459350303, 0.6138824679817453, 1.0], [0.17807566089945956, 0.5267687147544279, 1.0], [0.16910137736196432, 0.4978855723190725, 1.0], [0.1313008282644431, 0.5813170257250405, 1.0], [0.2692762290990295, 0.4712667505325058, 1.0], [0.2902200191123153, 0.5076745269956776, 1.0], [0.2364868197759407, 0.5104761751522431, 1.0]], 'density': 7, 'hasAttr2': True, 'labels': ['C1', 'C2'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x08\x00\x00\x00F\x00\x00\x03\xf7\x00\x00\x02D\x00\x00\x01\t\x00\x00\x00d\x00\x00\x03\xf6\x00\x00\x02C\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x01\t\x00\x00\x00d\x00\x00\x03\xf6\x00\x00\x02C', 'symbol_size': 10, 'table_name': 'Painted data', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': None, '__version__': 2}</properties>
+		<properties node_id="2" format="literal">{'activation_index': 3, 'alpha_index': 1, 'auto_apply': True, 'controlAreaVisible': True, 'hidden_layers_input': '100,', 'learner_name': 'Neural Network', 'max_iterations': 200, 'replicable': True, 'savedWidgetGeometry': None, 'solver_index': 2, '__version__': 2}</properties>
+		<properties node_id="3" format="pickle">gASVpQIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lE6MCXNlbGVjdGlvbpRdlIwLc2hvd19zY29yZXOUiIwLc2NvcmVfdGFibGWUfZSMEHNob3dfc2Nv
+cmVfaGludHOUfZQojAZNb2RlbF+UiIwGVHJhaW5flImMBVRlc3RflImMAkNBlIiMF1ByZWNpc2lv
+blJlY2FsbEZTdXBwb3J0lIiMC1RhcmdldFNjb3JllIiMCVByZWNpc2lvbpSIjAZSZWNhbGyUiIwC
+RjGUiIwDQVVDlIiMB0xvZ0xvc3OUiYwLU3BlY2lmaWNpdHmUiYwXTWF0dGhld3NDb3JyQ29lZmZp
+Y2llbnSUiIwDTVNFlIiMBFJNU0WUiIwDTUFFlIiMAlIylIiMBkNWUk1TRZSJjA9DbHVzdGVyaW5n
+U2NvcmWUiIwKU2lsaG91ZXR0ZZSIjBdBZGp1c3RlZE11dHVhbEluZm9TY29yZZSIdXOMC19fdmVy
+c2lvbl9flEsCjBBjb250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwH
+Q29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwXc2hvd19wcm9iYWJpbGl0eV9lcnJvcnOUiIwP
+c2hvd19yZWdfZXJyb3JzlEsBjAtzaG93bl9wcm9ic5RLAYwMdGFyZ2V0X2NsYXNzlIwWKEF2ZXJh
+Z2Ugb3ZlciBjbGFzc2VzKZRoBn2UaB9LAnWMB2NsYXNzZXOUjAJDMZSMAkMylIaUdWJoJCmBlH2U
+KGgnfZQoaCmIaCpLAWgrSwBoLIwWKEF2ZXJhZ2Ugb3ZlciBjbGFzc2VzKZRoBn2UaB9LAnVoLyl1
+YmV1Lg==
+</properties>
+		<properties node_id="4" format="pickle">gASVTwQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lE6MCXNlbGVjdGlvbpROjBF0b29sdGlwX3No
+b3dzX2FsbJSIjA92aXN1YWxfc2V0dGluZ3OUfZSMBWdyYXBolH2UKIwLYWxwaGFfdmFsdWWUS4CM
+DWNsYXNzX2RlbnNpdHmUiYwRaml0dGVyX2NvbnRpbnVvdXOUiYwLaml0dGVyX3NpemWUSwCME2xh
+YmVsX29ubHlfc2VsZWN0ZWSUiYwWb3J0aG9ub3JtYWxfcmVncmVzc2lvbpSJjAtwb2ludF93aWR0
+aJRLCowJc2hvd19ncmlklImMC3Nob3dfbGVnZW5klIiMDXNob3dfcmVnX2xpbmWUiXWMC19fdmVy
+c2lvbl9flEsFjBBjb250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwH
+Q29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwKYXR0cl9jb2xvcpSMBUNsYXNzlEtlhpSMCmF0
+dHJfbGFiZWyUTkr+////hpSMCmF0dHJfc2hhcGWUjA5OZXVyYWwgTmV0d29ya5RLZYaUjAlhdHRy
+X3NpemWUTkr+////hpSMBmF0dHJfeJSMAngxlEtmhpSMBmF0dHJfeZSMAngylEtmhpRoCX2UaBVL
+BXWMCmF0dHJpYnV0ZXOUfZQoaCpLAmgtSwJoIEsBdYwFbWV0YXOUfZQojBNMb2dpc3RpYyBSZWdy
+ZXNzaW9ulEsBjBhMb2dpc3RpYyBSZWdyZXNzaW9uIChDMSmUSwKMGExvZ2lzdGljIFJlZ3Jlc3Np
+b24gKEMyKZRLAmglSwGME05ldXJhbCBOZXR3b3JrIChDMSmUSwKME05ldXJhbCBOZXR3b3JrIChD
+MimUSwJ1dWJoGimBlH2UKGgdfZQoaB9oIEtlhpRoIk5K/v///4aUaCRoNEtlhpRoJ05K/v///4aU
+aCloKktmhpRoLGgtS2aGlGgJfZRoFUsFdWgwfZQoaCpLAmgtSwJoIEsBdWgyfZQoaDRLAYwYTG9n
+aXN0aWMgUmVncmVzc2lvbiAoQzEplEsCjBhMb2dpc3RpYyBSZWdyZXNzaW9uIChDMimUSwJ1dWJo
+GimBlH2UKGgdfZQoaB9OSv7///+GlGgiTkr+////hpRoJE5K/v///4aUaCdOSv7///+GlGgpaCpL
+ZoaUaCxoLUtmhpRoCX2UaBVLBXVoMH2UKGgqSwJoLUsCaCBLAXVoMn2UdWJoGimBlH2UKGgdfZQo
+aB9OSv7///+GlGgiTkr+////hpRoJE5K/v///4aUaCdOSv7///+GlGgpaCpLZoaUaCxoLUtmhpRo
+CX2UaBVLBXVoMH2UKGgqSwJoLUsCdWgyfZR1YmV1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
